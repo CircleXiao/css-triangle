@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css实现简单的三角形</title>
+    <style>
+       .triangle{
+           height: 0;
+           width: 0; 
+           float: left;
+           margin: 10px;
+           position: relative;        
+       }      
+       .up{         
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent;
+           border-bottom: 100px solid #33b5e5;
+       }
+       .down{
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent;
+           border-top: 100px solid #33b5e5;
+       }
+       .right{
+           border-top: 50px solid transparent;
+           border-bottom: 50px solid transparent;
+           border-left: 100px solid #33b5e5;
+       }
+       .left{
+           border-top: 50px solid transparent;
+           border-bottom: 50px solid transparent;
+           border-right: 100px solid #33b5e5;
+       }
+    </style>
+</head>
+<body>
+
+        <div class="triangle up"></div>
+        <div class="triangle right"></div>
+        <div class="triangle down"></div>
+        <div class="triangle left"></div>
+   
+</body>
+</html>
