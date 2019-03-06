@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>css实现空心三角形</title>
+    <title>css实现带边框的三角形</title>
     <style>
        .triangle{
            height: 0;
@@ -40,7 +40,8 @@
            top: 2px;
            border-left: 46px solid transparent;
            border-right: 46px solid transparent;
-           border-bottom: 96px solid #ffffff; 
+           /* border-bottom: 96px solid #ffffff;  */
+           border-bottom: 96px solid #e63c3c; 
        }
        .border-right{
            position: absolute;
@@ -48,7 +49,8 @@
            top: -46px;
            border-top: 46px solid transparent;
            border-bottom: 46px solid transparent;
-           border-left: 96px solid #ffffff;
+           /* border-left: 96px solid #ffffff; */
+           border-left: 96px solid #e63c3c;
        }
        .border-down{
            position: absolute;
@@ -56,8 +58,8 @@
            top: -98px;
            border-left: 46px solid transparent;
            border-right: 46px solid transparent;
-           border-top: 96px solid #ffffff;
-
+           /* border-top: 96px solid #ffffff; */
+           border-top: 96px solid #e63c3c;           
        }
        .border-left{
            position: absolute;
@@ -65,25 +67,25 @@
            top: -46px;
            border-top: 46px solid transparent;
            border-bottom: 46px solid transparent;
-           border-right: 96px solid #ffffff;
-
+           /* border-right: 96px solid #ffffff; */
+           border-right: 96px solid #e63c3c;
        }
     </style>
 </head>
 <body>
 
-    <div class="triangle up">
-        <div class="border-up"></div>
-    </div>
-    <div class="triangle right">
-        <div class="border-right"></div>
-    </div>
-    <div class="triangle down">
-        <div class="border-down"></div>
-    </div>
-    <div class="triangle left">
-        <div class="border-left"></div>
-    </div>
-
+        <div class="triangle up">
+            <div class="border-up"></div>
+        </div>
+        <div class="triangle right">
+            <div class="border-right"></div>
+        </div>
+        <div class="triangle down">
+            <div class="border-down"></div>
+        </div>
+        <div class="triangle left">
+            <div class="border-left"></div>
+        </div>
+   
 </body>
 </html>
